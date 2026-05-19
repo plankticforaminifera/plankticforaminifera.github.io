@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    font-family:serif;
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing:border-box;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+}
+#head{
+    width: 100%;
+    height: 100px;
+    background:transparent;
+    margin: 10px 10px 50px;
+}
+#banner{
+    width: 100%;
+    height: 70%;
+    background: #000000;
+    font-size:30pt
+
+
+}
+#container1{
+    width: 100%;
+    height: 100%;
+    min-height: 300v;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 100px;
+}
+#container2{
+    width: 100%;
+    height: 100%;
+    min-height: 300v;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    background-image: url(icons/background.jpeg);
+    background-size: 1000px;
+    padding: 50px;
+    margin-top: 40;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 45px;
+}
+#content {
+    width: 75%;
+    min-width:800px;
+    max-width:800px;
+    height: auto;
+    min-height: 500px;
+    margin: 10px auto;
+    background: rgba(0, 0, 0, 0);
+    border-radius:10px;
+    padding-bottom:50px;
+    padding-top:5px
+}
+#image1 {
+   position: absolute;
+   z-index: 2;
+   max-width:120%
+}
+#image2 {
+   position: absolute;
+   z-index: 2;
+   max-width:120%
+}
+#next {
+    background: url('icons/next_diatom.svg') no-repeat;
+    z-index:2;
+    width:100px;
+    height:100px;
+    position:relative;
+    left:500px;
+    bottom:-280px;
+}
+#next:hover {
+    background: url('icons/next_diatom_green.svg') no-repeat;
+}
+#info{
+    width:5%
+}
+.box h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.box h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.box1{
+    min-width: 500px;
+    height: 10px;
+    max-width: 500px;
+    background: #000000;
+    position: relative;
+    margin: 10px auto 0px;
+    padding: 40px 30px 310px;
+    border-radius:10px 10px 0px 0px
+}
+.box3{
+    width: 100%;
+    min-width: 100px;
+    max-width: 540px;
+    background: #000000;
+    position: relative;
+    margin: 100px auto 20px;
+    padding: 40px 30px 300px;
+    border-radius:10px
+}
+.box1 img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+} 
+.box2 {
+    width: 70%;
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 50px;
+    background: #000000;
+    margin: 0px auto 60px;
+    padding: 7px 60px 3px;
+    border-radius:0px 0px 10px 10px
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 0px;
+    cursor: pointer;
+    width: 49%;
+    min-width:10%
+}
+.startbuttonBox {
+    background-color: transparent;
+    width: 100%;
+    min-width:200px;
+    position:absolute;
+    bottom: 400px;
+    margin: 10px auto 5px;
+    padding: 10px 10px 10px;
+}
+.startbutton {
+    background-color: white;
+    color: black;
+    position:absolute;
+    bottom: 200px;
+    z-index: 10;
+    border: 2px solid #000000;
+    position:relative;
+}
+.startbutton:hover {
+    background-color: #000000;
+    color: white;
+}
+.buttonBox {
+    background-color: transparent;
+    width: 100%;
+    min-width:250px;
+    position:sticky;
+    bottom: 100px;
+    margin: 10px auto 5px;
+    padding: 10px 10px 10px;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+    position:relative;
+
+
+}
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #a40d12;
+    position:relative;
+
+}
+.button2:hover {
+    background-color: #a40d12;
+    color: white;
+}
+.responseBox {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    min-height: 110px;
+    max-height: 110px;
+    border-radius:10px;
+    width: 70%;
+    min-width:250px;
+    position:relative;
+    bottom: 10px;
+    margin: 10px auto 5px;
+    padding: 10px 10px 10px;
+    color: black;
+}
+
+.responseBox .red {
+  background-color: rgba(255, 0, 0, 0.3) ;
+  border-style: solid;
+  border-color: red;
+  color:red;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+.responseBox .green {
+  background-color: rgba(0, 255, 0, 0.3) ;
+  border-style: solid;
+  border-color: green;
+  color:green;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+.responseBox .answer {
+    max-width:100%;
+    text-align: center;
+
+}
+.infoBox {
+    position: absolute;
+    bottom:25px;
+    left: 240px;
+    max-width:100%;
+    min-width:100%;
+    z-index:10;
+    text-align: center;
+    align-items: center;
+}
+
+.infoText{
+    font-size:9px;
+}
+
+/* Popup container */
+.popup {
+
+  position: relative;
+  min-width:30px;
+  display: inline-block;
+  cursor: pointer;
+  max-width:100%;
+  z-index:10;
+
+}
+
+.info{
+    position: relative;
+    max-width:100%;
+    min-width:100%;
+    z-index:10;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: white;
+  color: black;
+  z-index:10;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -100%;
+  left: 150px;
+  border-style: solid;
+  border-color: black;
+  margin-left: -80px;
+  margin-bottom: 10px;
+  font-size:10px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  rotate: 90deg;
+  top: 30%;
+  left: -2%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+ .popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+ .popup .noshow {
+  visibility: hidden;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.modal {
+cursor: pointer
+}
+.modal .modal-box {
+    visibility: hidden;
+    min-height: 400px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+    border: 1pt solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.modal .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black
+
+}
+
+.modal .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal .modal-header .close-button {
+    cursor:pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+}
+
+.modal .modal-body {
+    padding: 10px 15px;
+    text-align:center;
+    line-height: 30pt;
+        color:red;
+
+
+    
+}
+
+.modal .modal-foot  {
+    padding: 10px 15px;
+    text-align:right;
+    line-height: 30pt;
+    margin: auto;
+    color:red;
+
+
+    
+}
+
+#overlay {
+    visibility: hidden;
+    position: fixed;
+    /* opacity: 0; */
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.modal .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+} 
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+#overlay .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
