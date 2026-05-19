@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxTest</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+    <div id="container2">
+        <div id="head">
+            <div id='banner'>
+                    <a href="https://wikipedia.org">
+                        <img src="icons/bulloides.png" height="65">
+                        Atlas of Modern Planktic Foraminifera
+                    </a>
+
+                    <p style="text-align: center;line-height: 90px;">Is this <i>N. dutertrei </i>?</p>
+            </div>
+        </div>
+        <!-- end of head -->
+        <div id="content">
+            <div class="box1">
+                <div style="position:relative;height: 300px;">
+                    <img id="image1" src="forams/image1.jpg" onclick="userSelection(4)"/>
+                    <img id="image2" src="icons/blank.svg" onclick="userSelection(4)"/>
+                    <!-- <div style="position:absolute; top:0; left:0; width:100%"></div> -->
+                    <img id="next" src="icons/blank.svg" onclick="userSelection(3)">
+
+                    <!-- <button class ="button 
+                    startbutton" onclick="userSelection(4)">Start
+                    </button>-->
+                </div>
+            </div>
+            <div class="box2">  
+                <div class="buttonBox">
+                    <button class ="button 
+                    button1" onclick="userSelection(1)">Yes
+                    </button>
+                    <button class="button
+                    button2" onclick="userSelection(2)">No</button>
+                 </div>
+            </div>
+            <div class="responseBox" id="responseBox"> 
+                
+                <div class ="answer" id="answerText"> 
+                </div>
+                <div class = "infoBox">                     
+
+                    <div class="popup" > 
+                        <img class="info" id="infoBtn" src="./icons/info.svg" onmouseenter="infoClick(1)" onmouseleave="infoClick(2)">
+
+                    <span class="popuptext" id="myPopup" >text</span> 
+                        
+                    </div>
+                    <div class="infoText">Specimen <br>information</br>
+                    </div>
+                </div>
+
+            </div>
+                <!-- <button onclick="userSelection(3)">Next</button> -->
+
+                <!-- <button onclick="get_random_image()"></button> -->
+
+        </div> 
+
+
+            <div class="modal" id="modal">
+                <div class="modal-box" id="modal1">
+                    <div class="modal-header">
+                        <div class="title">Finished!</div>
+                        <button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body" id = "modalbody"><a > Absolute URLs</a>
+                        </div class="modal-foot" id = "modalfoot">
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        <div id="overlay"></div>
+        <!-- end of content -->
+    </div>
+
+    <script src="rand.js" ></script>
+</body>
+</html>
