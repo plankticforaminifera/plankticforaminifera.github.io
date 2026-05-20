@@ -79,9 +79,9 @@ a {
     z-index:2;
     width:100px;
     height:100px;
-    position:relative;
+    position:absolute;
     left:500px;
-    bottom:-280px;
+    bottom:-50px;
 }
 #next:hover {
     background: url('icons/next_diatom_green.svg') no-repeat;
@@ -135,6 +135,12 @@ a {
     margin: 0px auto 60px;
     padding: 7px 60px 3px;
     border-radius:0px 0px 10px 10px
+}
+#flip {
+    position:absolute;
+    max-width:12%;
+    top: -150px;  
+    z-index: 20;
 }
 .button {
     border: none;
