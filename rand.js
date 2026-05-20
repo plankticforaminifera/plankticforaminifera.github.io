@@ -215,6 +215,7 @@ function userSelection(response) {
 
             let image_current = image_array_rand[1]; //get the first image name of the array
             document.getElementById('image1').src = `./forams/${image_current}`; //display this image in image style 1
+            document.getElementById('flip').src = './icons/flip.svg';
 
             console.log(position.length)
             speciesInfo = checkSpecies(image_current)
@@ -226,23 +227,26 @@ function userSelection(response) {
 
         }
                       
-                if (!imgAtt.includes("sp")){ //current image is front
-                    spView = imgAtt + "_sp.png"
-                    spView_scale = scaleAtt + "_sp.png"
+        if (!imgAtt.includes("sp")){ //current image is front
+            scale = scaleAtt
+            spView = imgAtt + "_sp.png"
+            spView_scale = scaleAtt + ".png"
 
-                    document.getElementById('image1').src = spView;
-                    document.getElementById('image2').src = spView_scale;
+            document.getElementById('image1').src = spView;
+            document.getElementById('image2').src = spView_scale;
+            document.getElementById('flip').src = './icons/flip_sp.svg';
 
-                }
+        }
 
                 
                 
-                if (imgAtt.includes("sp")){
-                    imgAtt = imgAtt.replace("_sp","");
-                    scaleAtt = scaleAtt.replace("_sp","");
-                    document.getElementById('image1').src = `${imgAtt}.png`;
-                    document.getElementById('image2').src = `${scaleAtt}.png`;}
-                
+        if (imgAtt.includes("sp")){
+            imgAtt = imgAtt.replace("_sp","");
+            scaleAtt = scaleAtt.replace("_sp","");
+            document.getElementById('image1').src = `${imgAtt}.png`;
+            document.getElementById('image2').src = `${scaleAtt}.png`;
+            document.getElementById('flip').src = './icons/flip.svg';
+        }
     }
                     
 
@@ -296,7 +300,7 @@ function userSelection(response) {
         }
         if (!imgAtt.includes("image") && counter.length==position.length+1) {//if we are NOT on start screen
 
-
+            document.getElementById('flip').src = './icons/flip.svg';
             if (position.length==0) { //if we are on the first image 
                 
                 current_index=2
